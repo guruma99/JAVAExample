@@ -1,0 +1,15 @@
+package sec01.exam01;
+
+public class ExceptionExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String data = null;
+		try {
+			System.out.println(data.toString());
+		}catch(Exception e) {
+			System.out.println("after Exception");
+		}
+	}
+
+}
