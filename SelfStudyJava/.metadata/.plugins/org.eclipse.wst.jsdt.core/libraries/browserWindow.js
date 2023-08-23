@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-function BarProp(){};
+function BarProp() { };
 BarProp.prototype = new Array();
 
 /**
@@ -17,7 +17,7 @@ BarProp.prototype = new Array();
  * @constructor
  * @since Common Usage, no standard
 */
-function Window(){};
+function Window() { };
 Window.prototype = new EventTarget();
 Window.prototype.self = new Window();
 Window.prototype.window = new Window();
@@ -39,19 +39,19 @@ Window.prototype.defaultStatus = "";
  * @type Document
  * @memberOf Window
  */
-Window.prototype.document= new HTMLDocument();
+Window.prototype.document = new HTMLDocument();
 /**
  * Property history
  * @type History
  * @memberOf Window
  */
-Window.prototype.history= new History();
+Window.prototype.history = new History();
 /**
  * Property location
  * @type Location
  * @memberOf Window
  */
-Window.prototype.location=new Location();
+Window.prototype.location = new Location();
 /**
  * Property name
  * @type String
@@ -124,11 +124,11 @@ Window.prototype.top = new Window();
  * These properties may need to be moved into a browswer specific library.
  */
 
- /**
- * Property innerWidth
- * @type Number
- * @memberOf Window
- */
+/**
+* Property innerWidth
+* @type Number
+* @memberOf Window
+*/
 Window.prototype.innerWidth = 0;
 /**
  * Property innerHeight
@@ -162,20 +162,20 @@ Window.prototype.screenLeft = 0;
 Window.prototype.screenTop = 0;
 //Window.prototype.event = new Event();
 Window.prototype.length = 0;
-Window.prototype.scrollbars= new BarProp();
-Window.prototype.scrollX=0;
-Window.prototype.scrollY=0;
-Window.prototype.content= new Window();
-Window.prototype.menubar= new BarProp();
-Window.prototype.toolbar= new BarProp();
-Window.prototype.locationbar= new BarProp();
-Window.prototype.personalbar= new BarProp();
-Window.prototype.statusbar= new BarProp();
-Window.prototype.directories= new BarProp();
-Window.prototype.scrollMaxX=0;
-Window.prototype.scrollMaxY=0;
-Window.prototype.fullScreen="";
-Window.prototype.frameElement="";
+Window.prototype.scrollbars = new BarProp();
+Window.prototype.scrollX = 0;
+Window.prototype.scrollY = 0;
+Window.prototype.content = new Window();
+Window.prototype.menubar = new BarProp();
+Window.prototype.toolbar = new BarProp();
+Window.prototype.locationbar = new BarProp();
+Window.prototype.personalbar = new BarProp();
+Window.prototype.statusbar = new BarProp();
+Window.prototype.directories = new BarProp();
+Window.prototype.scrollMaxX = 0;
+Window.prototype.scrollMaxY = 0;
+Window.prototype.fullScreen = "";
+Window.prototype.frameElement = "";
 /* End properites */
 
 /**
@@ -183,41 +183,41 @@ Window.prototype.frameElement="";
  * @param {String} message
  * @memberOf Window
  */
-Window.prototype.alert = function(message){};
+Window.prototype.alert = function(message) { };
 /**
  * function blur() 
  * @memberOf Window
  */
-Window.prototype.blur = function(){};
+Window.prototype.blur = function() { };
 /**
  * function clearInterval(intervalID) 
  * @param intervalID
  * @memberOf Window
  */
-Window.prototype.clearInterval = function(intervalID){};
+Window.prototype.clearInterval = function(intervalID) { };
 /**
  * function clearTimeout(intervalID) 
  * @param intervalID
  * @memberOf Window
  */
-Window.prototype.clearTimeout = function(intervalID){};
+Window.prototype.clearTimeout = function(intervalID) { };
 /**
  * function close() 
  * @memberOf Window
  */
-Window.prototype.close = function(){};
+Window.prototype.close = function() { };
 /**
  * function confirm() 
  * @param {String} arg
  * @memberOf Window
  * @returns {Boolean}
  */
-Window.prototype.confirm = function(arg){return false;};
+Window.prototype.confirm = function(arg) { return false; };
 /**
  * function focus() 
  * @memberOf Window
  */
-Window.prototype.focus = function(){};
+Window.prototype.focus = function() { };
 /**
  * function getComputedStyle(element, pseudoElt ) 
  * @param {Element} element
@@ -225,21 +225,21 @@ Window.prototype.focus = function(){};
  * @memberOf Window
  * @returns {Object}
  */
-Window.prototype.getComputedStyle = function(element,pseudoElt ){return new Object();};
+Window.prototype.getComputedStyle = function(element, pseudoElt) { return new Object(); };
 /**
  * function moveTo(x, y) 
  * @param {Number} x
  * @param {Number} y
  * @memberOf Window
  */
-Window.prototype.moveTo = function(x,y){};
+Window.prototype.moveTo = function(x, y) { };
 /**
  * function moveBy(deltaX, deltaY) 
  * @param {Number} deltaX
  * @param {Number} deltaY
  * @memberOf Window
  */
-Window.prototype.moveBy = function(deltaX,deltaY){};
+Window.prototype.moveBy = function(deltaX, deltaY) { };
 /**
  * function open(optionalArg1, optionalArg2, optionalArg3, optionalArg4) 
  * @param {String} url
@@ -249,12 +249,12 @@ Window.prototype.moveBy = function(deltaX,deltaY){};
  * @memberOf Window
  * @returns {Window}
  */
-Window.prototype.open = function(url, windowName, windowFeatures, optionalArg4){return new Window();};
+Window.prototype.open = function(url, windowName, windowFeatures, optionalArg4) { return new Window(); };
 /**
  * function print() 
  * @memberOf Window
  */
-Window.prototype.print = function(){};
+Window.prototype.print = function() { };
 /**
  * function prompt(text, value) 
  * @param {String} text
@@ -262,35 +262,35 @@ Window.prototype.print = function(){};
  * @memberOf Window
  * @returns {String}
  */
-Window.prototype.prompt = function(text, value){return "";};
+Window.prototype.prompt = function(text, value) { return ""; };
 /**
  * function resizeTo(newOuterWidth,newOuterHeight) 
  * @param {Number} newOuterWidth
  * @param {Number} newOuterHeighr
  * @memberOf Window
  */
-Window.prototype.resizeTo=function(newOuterWidth,newOuterHeight){};
+Window.prototype.resizeTo = function(newOuterWidth, newOuterHeight) { };
 /**
  * function resizeBy(deltaX, deltaY) 
  * @param {Number} deltaX
  * @param {Number} deltaY
  * @memberOf Window
  */
-Window.prototype.resizeBy=function(deltaX,deltaY){};
+Window.prototype.resizeBy = function(deltaX, deltaY) { };
 /**
  * function scrollTo(x,y) 
  * @param {Number} x
  * @param {Number} y
  * @memberOf Window
  */
-Window.prototype.scrollTo=function(x,y){};
+Window.prototype.scrollTo = function(x, y) { };
 /**
  * function scrollBy(pixelX,pixelY) 
  * @param {Number} pixelX
  * @param {Number} pixelY
  * @memberOf Window
  */
-Window.prototype.scrollBy=function(pixelX,pixelY){};
+Window.prototype.scrollBy = function(pixelX, pixelY) { };
 /**
  * function setInterval(arg1, arg2) 
  * @param {Function} callback
@@ -298,7 +298,7 @@ Window.prototype.scrollBy=function(pixelX,pixelY){};
  * @memberOf Window
  * @returns {Number}
  */
-Window.prototype.setInterval=function(callback, delay){return 0;};
+Window.prototype.setInterval = function(callback, delay) { return 0; };
 /**
  * function setTimeout(callback, delay) 
  * @param {Function} callback
@@ -306,43 +306,43 @@ Window.prototype.setInterval=function(callback, delay){return 0;};
  * @memberOf Window
  * @returns {Number}
  */
-Window.prototype.setTimeout=function(callback, delay){ return 0;};
+Window.prototype.setTimeout = function(callback, delay) { return 0; };
 /**
  * function atob(encodedData) 
  * @param {String} encodedData
  * @memberOf Window
  * @returns {String}
  */
-Window.prototype.atob=function(encodedData){return "";};
+Window.prototype.atob = function(encodedData) { return ""; };
 /**
  * function btoa(arg) 
  * @param {String} stringToEncode
  * @memberOf Window
  * @returns {String}
  */
-Window.prototype.btoa=function(stringToEncode){return "";};
+Window.prototype.btoa = function(stringToEncode) { return ""; };
 /**
  * function setResizable(resizable) 
  * @param {Boolean} resizable
  * @memberOf Window
  */
-Window.prototype.setResizable=function(resizable){};
+Window.prototype.setResizable = function(resizable) { };
 
-Window.prototype.captureEvents=function(eventType){};
-Window.prototype.releaseEvents=function(eventType){};
-Window.prototype.routeEvent=function(eventType){};
-Window.prototype.enableExternalCapture=function(){};
-Window.prototype.disableExternalCapture=function(){};
-Window.prototype.find=function(){};
-Window.prototype.back=function(){};
-Window.prototype.forward=function(){};
-Window.prototype.home=function(){};
-Window.prototype.stop=function(){};
+Window.prototype.captureEvents = function(eventType) { };
+Window.prototype.releaseEvents = function(eventType) { };
+Window.prototype.routeEvent = function(eventType) { };
+Window.prototype.enableExternalCapture = function() { };
+Window.prototype.disableExternalCapture = function() { };
+Window.prototype.find = function() { };
+Window.prototype.back = function() { };
+Window.prototype.forward = function() { };
+Window.prototype.home = function() { };
+Window.prototype.stop = function() { };
 /**
  * @param {Number} pixelX
  * @param {Number} pixelY
  */
-Window.prototype.scroll=function(pixelX,pixelY){};
+Window.prototype.scroll = function(pixelX, pixelY) { };
 /* End functions */
 
 /**
@@ -351,8 +351,8 @@ Window.prototype.scroll=function(pixelX,pixelY){};
   * @constructor
   * @since Common Usage, no standard
  */
-function History(){};
-History.prototype=new Object();
+function History() { };
+History.prototype = new Object();
 History.prototype.history = new History();
 /**
  * Property length
@@ -364,18 +364,18 @@ History.prototype.length = 0;
  * function back()
  * @memberOf History
  */
-History.prototype.back = function(){};
+History.prototype.back = function() { };
 /**
  * function forward()
  * @memberOf History
  */
-History.prototype.forward = function(){};
+History.prototype.forward = function() { };
 /**
  * function back()
  * @param arg
  * @memberOf History
  */
-History.prototype.go = function(arg){};
+History.prototype.go = function(arg) { };
 
 /**
   * Object Location()
@@ -383,7 +383,7 @@ History.prototype.go = function(arg){};
   * @constructor
   * @since Common Usage, no standard
  */
-function Location(){};
+function Location() { };
 Location.prototype = new Object();
 Location.prototype.location = new Location();
 /**
@@ -439,19 +439,19 @@ Location.prototype.search = "";
  * @param {String} arg
  * @memberOf Location
  */
-Location.prototype.assign = function(arg){};
+Location.prototype.assign = function(arg) { };
 /**
  * function reload(optionalArg)
  * @param {Boolean} optionalArg
  * @memberOf Location
  */
-Location.prototype.reload = function(optionalArg){};
+Location.prototype.reload = function(optionalArg) { };
 /**
  * function replace(arg)
  * @param {String} arg
  * @memberOf Location
  */
-Location.prototype.replace = function(arg){};
+Location.prototype.replace = function(arg) { };
 
 /**
  * Object Navigator()
@@ -459,7 +459,7 @@ Location.prototype.replace = function(arg){};
  * @constructor
  * @since Common Usage, no standard
 */
-function Navigator(){};
+function Navigator() { };
 Navigator.prototype = new Object();
 Navigator.prototype.navigator = new Navigator();
 /**
@@ -515,7 +515,7 @@ Navigator.prototype.userAgent = "";
  * @returns {Boolean}
  * @memberOf Navigator
  */
-Navigator.prototype.javaEnabled = function(){return false;};
+Navigator.prototype.javaEnabled = function() { return false; };
 
 /**
  * Object Screen()
@@ -523,7 +523,7 @@ Navigator.prototype.javaEnabled = function(){return false;};
  * @constructor
  * @since Common Usage, no standard
 */
-function Screen(){};
+function Screen() { };
 Screen.prototype = new Object();
 Screen.prototype.screen = new Screen();
 /**
@@ -557,39 +557,39 @@ Navigator.prototype.height = 0;
  */
 Navigator.prototype.width = 0;
 
-Event.prototype=new Object();
+Event.prototype = new Object();
 // PhaseType
 Event.prototype.CAPTURING_PHASE = 1;
 Event.prototype.AT_TARGET = 2;
 Event.prototype.BUBBLING_PHASE = 3;
 
-Event.prototype.type="";
-Event.prototype.target=new EventTarget();
-Event.prototype.currentTarget=new EventTarget();
-Event.prototype.eventPhase=0;
-Event.prototype.bubbles=false;
-Event.prototype.cancelable=false;
-Event.prototype.timeStamp=0;
-Event.prototype.stopPropagation=function(){};
-Event.prototype.preventDefault=function(){};
+Event.prototype.type = "";
+Event.prototype.target = new EventTarget();
+Event.prototype.currentTarget = new EventTarget();
+Event.prototype.eventPhase = 0;
+Event.prototype.bubbles = false;
+Event.prototype.cancelable = false;
+Event.prototype.timeStamp = 0;
+Event.prototype.stopPropagation = function() { };
+Event.prototype.preventDefault = function() { };
 /**
  * @param {String} eventTypeArg
  * @param {Boolean} canBubbleArg
  * @param {Boolean} cancelableArg
  */
-Event.prototype.initEvent=function(eventTypeArg, 
-                             canBubbleArg, 
-                             cancelableArg){};
-function EventListener(){};
-EventListener.prototype=new Object();
+Event.prototype.initEvent = function(eventTypeArg,
+	canBubbleArg,
+	cancelableArg) { };
+function EventListener() { };
+EventListener.prototype = new Object();
 /**
  * @param {Event} event
  * @memberOf EventListener
  */
-EventListener.prototype.handleEvent=function(event){};
+EventListener.prototype.handleEvent = function(event) { };
 
-function EventTarget(){};
-EventTarget.prototype=new Object();
+function EventTarget() { };
+EventTarget.prototype = new Object();
 /*
  * These functions may need to be moved into a browser specific library.
  */
@@ -598,7 +598,7 @@ EventTarget.prototype=new Object();
  * @param event {Event}
  * @throws {EventException}
  */
-EventTarget.prototype.dispatchEvent=function(event){};
+EventTarget.prototype.dispatchEvent = function(event) { };
 
 // https://developer.mozilla.org/en-US/docs/DOM/element.addEventListener
 /**
@@ -607,7 +607,7 @@ EventTarget.prototype.dispatchEvent=function(event){};
  * @param {EventListener} listener
  * @param {Boolean} useCapture
  */
-EventTarget.prototype.addEventListener=function(type, listener, useCapture){};
+EventTarget.prototype.addEventListener = function(type, listener, useCapture) { };
 // https://developer.mozilla.org/en-US/docs/DOM/element.removeEventListener
 /**
  * @memberOf Window
@@ -615,4 +615,4 @@ EventTarget.prototype.addEventListener=function(type, listener, useCapture){};
  * @param {EventListener} listener
  * @param {Boolean} useCapture
  */
-EventTarget.prototype.removeEventListener=function(type, listener, useCapture){};
+EventTarget.prototype.removeEventListener = function(type, listener, useCapture) { };

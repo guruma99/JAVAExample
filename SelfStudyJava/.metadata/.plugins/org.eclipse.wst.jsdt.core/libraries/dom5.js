@@ -15,8 +15,8 @@
  * @param {String} selectors
  * @memberOf Document
  * @returns {Element}      
- */ 
-Document.prototype.querySelector=function(selectors){return new Element();};
+ */
+Document.prototype.querySelector = function(selectors) { return new Element(); };
 
 /**
  * function querySelectorAll(selectors)
@@ -24,8 +24,8 @@ Document.prototype.querySelector=function(selectors){return new Element();};
  * @param {String} selectors
  * @memberOf Document
  * @returns {NodeList}      
- */ 
-Document.prototype.querySelectorAll=function(selectors){return new NodeList();};
+ */
+Document.prototype.querySelectorAll = function(selectors) { return new NodeList(); };
 
 /**
  * function querySelector(selectors)
@@ -33,8 +33,8 @@ Document.prototype.querySelectorAll=function(selectors){return new NodeList();};
  * @param {String} selectors
  * @memberOf DocumentFragment
  * @returns {Element}      
- */ 
-DocumentFragment.prototype.querySelector=function(selectors){return new Element();};
+ */
+DocumentFragment.prototype.querySelector = function(selectors) { return new Element(); };
 
 /**
  * function querySelectorAll(selectors)
@@ -42,8 +42,8 @@ DocumentFragment.prototype.querySelector=function(selectors){return new Element(
  * @param {String} selectors
  * @memberOf DocumentFragment
  * @returns {NodeList}      
- */ 
-DocumentFragment.prototype.querySelectorAll=function(selectors){return new NodeList();};
+ */
+DocumentFragment.prototype.querySelectorAll = function(selectors) { return new NodeList(); };
 
 /**
  * function querySelector(selectors)
@@ -51,8 +51,8 @@ DocumentFragment.prototype.querySelectorAll=function(selectors){return new NodeL
  * @param {String} selectors
  * @memberOf Element
  * @returns {Element}      
- */ 
-Element.prototype.querySelector=function(selectors){return new Element();};
+ */
+Element.prototype.querySelector = function(selectors) { return new Element(); };
 
 /**
  * function querySelectorAll(selectors)
@@ -60,15 +60,15 @@ Element.prototype.querySelector=function(selectors){return new Element();};
  * @param {String} selectors
  * @memberOf Element
  * @returns {NodeList}      
- */ 
-Element.prototype.querySelectorAll=function(selectors){return new NodeList();};
+ */
+Element.prototype.querySelectorAll = function(selectors) { return new NodeList(); };
 
 /**
  * Property state
  * @type Object
  * @memberOf History
  */
-History.prototype.state=new Object();
+History.prototype.state = new Object();
 
 /**
  * function pushState(data,title,url)
@@ -78,7 +78,7 @@ History.prototype.state=new Object();
  * @param {String} url - optional
  * @memberOf History
  */
-History.prototype.pushState=function(data,title,url){};
+History.prototype.pushState = function(data, title, url) { };
 
 /**
  * function replaceState(data,title,url)
@@ -88,7 +88,7 @@ History.prototype.pushState=function(data,title,url){};
  * @param {String} url - optional
  * @memberOf History
  */
-History.prototype.replaceState=function(data,title,url){};
+History.prototype.replaceState = function(data, title, url) { };
 
 /**
  * Property sessionStorage
@@ -96,7 +96,7 @@ History.prototype.replaceState=function(data,title,url){};
  * @type Storage
  * @memberOf Window
  */
-Window.prototype.sessionStorage=new Storage();
+Window.prototype.sessionStorage = new Storage();
 
 /**
  * Property localStorage
@@ -104,14 +104,14 @@ Window.prototype.sessionStorage=new Storage();
  * @type Storage
  * @memberOf Window
  */
-Window.prototype.localStorage=new Storage();
+Window.prototype.localStorage = new Storage();
 
 /**
  * Object Storage
  * http://www.w3.org/TR/2011/CR-webstorage-20111208
  */
-function Storage(){};
-Storage.prototype=new Object();
+function Storage() { };
+Storage.prototype = new Object();
 
 /**
  * Property length
@@ -119,7 +119,7 @@ Storage.prototype=new Object();
  * @type Number
  * @memberOf Storage
  */
-Storage.prototype.length=new Number();
+Storage.prototype.length = new Number();
 
 /**
  * function key(index)
@@ -128,7 +128,7 @@ Storage.prototype.length=new Number();
  * @memberOf Storage
  * @returns String
  */
-Storage.prototype.key=function(index){return new String();};
+Storage.prototype.key = function(index) { return new String(); };
 
 /**
  * function getItem(key)
@@ -137,7 +137,7 @@ Storage.prototype.key=function(index){return new String();};
  * @memberOf Storage
  * @returns String
  */
-Storage.prototype.getItem=function(key){return new String();};
+Storage.prototype.getItem = function(key) { return new String(); };
 
 /**
  * function setItem(key,value)
@@ -146,7 +146,7 @@ Storage.prototype.getItem=function(key){return new String();};
  * @param {String} value
  * @memberOf Storage
  */
-Storage.prototype.setItem=function(key,value){};
+Storage.prototype.setItem = function(key, value) { };
 
 /**
  * function removeItem(key)
@@ -154,14 +154,14 @@ Storage.prototype.setItem=function(key,value){};
  * @param {String} key
  * @memberOf Storage
  */
-Storage.prototype.removeItem=function(key){};
+Storage.prototype.removeItem = function(key) { };
 
 /**
  * function clear()
  * http://www.w3.org/TR/2011/CR-webstorage-20111208
  * @memberOf Storage
  */
-Storage.prototype.clear=function(){};
+Storage.prototype.clear = function() { };
 
 /**
  * Object WebSocket
@@ -169,8 +169,8 @@ Storage.prototype.clear=function(){};
  * @constructor
  * @param {String} url
  */
-function WebSocket(url){};
-WebSocket.prototype=new Object();
+function WebSocket(url) { };
+WebSocket.prototype = new Object();
 
 /**
  * Constant WebSocket.CONNECTING=0
@@ -178,7 +178,7 @@ WebSocket.prototype=new Object();
  * @constant
  * @type Number
  */
-WebSocket.prototype.CONNECTING=0;
+WebSocket.prototype.CONNECTING = 0;
 
 /**
  * Constant WebSocket.OPEN=1
@@ -186,7 +186,7 @@ WebSocket.prototype.CONNECTING=0;
  * @constant
  * @type Number
  */
-WebSocket.prototype.OPEN=1;
+WebSocket.prototype.OPEN = 1;
 
 /**
  * Constant WebSocket.CLOSING=2
@@ -194,7 +194,7 @@ WebSocket.prototype.OPEN=1;
  * @constant
  * @type Number
  */
-WebSocket.prototype.CLOSING=2;
+WebSocket.prototype.CLOSING = 2;
 
 /**
  * Constant WebSocket.CLOSED=3
@@ -202,7 +202,7 @@ WebSocket.prototype.CLOSING=2;
  * @constant
  * @type Number
  */
-WebSocket.prototype.CLOSED=3;
+WebSocket.prototype.CLOSED = 3;
 
 /**
  * Property url
@@ -210,7 +210,7 @@ WebSocket.prototype.CLOSED=3;
  * @type String
  * @memberOf WebSocket
  */
-WebSocket.prototype.url=new String();
+WebSocket.prototype.url = new String();
 
 /**
  * Property readyState
@@ -218,7 +218,7 @@ WebSocket.prototype.url=new String();
  * @type Number
  * @memberOf WebSocket
  */
-WebSocket.prototype.readyState=new Number();
+WebSocket.prototype.readyState = new Number();
 
 /**
  * Property bufferedAmount
@@ -226,7 +226,7 @@ WebSocket.prototype.readyState=new Number();
  * @type Number
  * @memberOf WebSocket
  */
-WebSocket.prototype.bufferedAmount=new Number();
+WebSocket.prototype.bufferedAmount = new Number();
 
 /**
  * Property extensions
@@ -234,7 +234,7 @@ WebSocket.prototype.bufferedAmount=new Number();
  * @type String
  * @memberOf WebSocket
  */
-WebSocket.prototype.extensions=new String();
+WebSocket.prototype.extensions = new String();
 
 /**
  * Property protocol
@@ -242,7 +242,7 @@ WebSocket.prototype.extensions=new String();
  * @type String
  * @memberOf WebSocket
  */
-WebSocket.prototype.protocol=new String();
+WebSocket.prototype.protocol = new String();
 
 /**
  * Property binaryType
@@ -250,7 +250,7 @@ WebSocket.prototype.protocol=new String();
  * @type String
  * @memberOf WebSocket
  */
-WebSocket.prototype.binaryType=new String();
+WebSocket.prototype.binaryType = new String();
 
 /**
  * function close(code,reason)
@@ -259,7 +259,7 @@ WebSocket.prototype.binaryType=new String();
  * @param {String} reason - optional
  * @memberOf WebSocket
  */
-WebSocket.prototype.close=function(code,reason){};
+WebSocket.prototype.close = function(code, reason) { };
 
 /**
  * function send(data)
@@ -267,7 +267,7 @@ WebSocket.prototype.close=function(code,reason){};
  * @param {Object} data - may be a String, Blob, ArrayBuffer, or ArrayBufferView 
  * @memberOf WebSocket
  */
-WebSocket.prototype.send=function(data){};
+WebSocket.prototype.send = function(data) { };
 
 /**
  * Property geolocation
@@ -275,14 +275,14 @@ WebSocket.prototype.send=function(data){};
  * @type Geolocation
  * @memberOf Navigator
  */
-Navigator.prototype.geolocation=new Geolocation();
+Navigator.prototype.geolocation = new Geolocation();
 
 /**
  * Object Geolocation
  * http://www.w3.org/TR/2012/PR-geolocation-API-20120510
  */
-function Geolocation(){};
-Geolocation.prototype=new Object();
+function Geolocation() { };
+Geolocation.prototype = new Object();
 
 /**
  * function getCurrentPosition(successCallback,errorCallback,options)
@@ -292,7 +292,7 @@ Geolocation.prototype=new Object();
  * @param {PositionOptions} options - optional
  * @memberOf Geolocation
  */
-Geolocation.prototype.getCurrentPosition=function(successCallback,errorCallback,options){};
+Geolocation.prototype.getCurrentPosition = function(successCallback, errorCallback, options) { };
 
 /**
  * function watchPosition(successCallback,errorCallback,options)
@@ -303,7 +303,7 @@ Geolocation.prototype.getCurrentPosition=function(successCallback,errorCallback,
  * @memberOf Geolocation
  * @returns {Number}
  */
-Geolocation.prototype.watchPosition=function(successCallback,errorCallback,options){return new Number();};
+Geolocation.prototype.watchPosition = function(successCallback, errorCallback, options) { return new Number(); };
 
 /**
  * function clearWatch(watchId)
@@ -311,14 +311,14 @@ Geolocation.prototype.watchPosition=function(successCallback,errorCallback,optio
  * @param {Number} watchId
  * @memberOf Geolocation
  */
-Geolocation.prototype.clearWatch=function(watchId){};
+Geolocation.prototype.clearWatch = function(watchId) { };
 
 /**
  * Object Coordinates
  * http://www.w3.org/TR/2012/PR-geolocation-API-20120510
  */
-function Coordinates(){};
-Coordinates.prototype=new Object();
+function Coordinates() { };
+Coordinates.prototype = new Object();
 
 /**
  * Property latitude
@@ -326,7 +326,7 @@ Coordinates.prototype=new Object();
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.latitude=new Number();;
+Coordinates.prototype.latitude = new Number();;
 
 /**
  * Property longitude
@@ -334,7 +334,7 @@ Coordinates.prototype.latitude=new Number();;
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.longitude=new Number();;
+Coordinates.prototype.longitude = new Number();;
 
 /**
  * Property altitude
@@ -342,7 +342,7 @@ Coordinates.prototype.longitude=new Number();;
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.altitude=new Number();;
+Coordinates.prototype.altitude = new Number();;
 
 /**
  * Property accuracy
@@ -350,7 +350,7 @@ Coordinates.prototype.altitude=new Number();;
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.accuracy=new Number();;
+Coordinates.prototype.accuracy = new Number();;
 
 /**
  * Property altitudeAccuracy
@@ -358,7 +358,7 @@ Coordinates.prototype.accuracy=new Number();;
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.altitudeAccuracy=new Number();;
+Coordinates.prototype.altitudeAccuracy = new Number();;
 
 /**
  * Property heading
@@ -366,7 +366,7 @@ Coordinates.prototype.altitudeAccuracy=new Number();;
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.heading=new Number();;
+Coordinates.prototype.heading = new Number();;
 
 /**
  * Property speed
@@ -374,14 +374,14 @@ Coordinates.prototype.heading=new Number();;
  * @type Number
  * @memberOf Coordinates
  */
-Coordinates.prototype.speed=new Number();
+Coordinates.prototype.speed = new Number();
 
 /**
  * Object Position
  * http://www.w3.org/TR/2012/PR-geolocation-API-20120510
  */
-function Position(){};
-Position.prototype=new Object();
+function Position() { };
+Position.prototype = new Object();
 
 /**
  * Property coords
@@ -389,7 +389,7 @@ Position.prototype=new Object();
  * @type Coordinates
  * @memberOf Position
  */
-Position.prototype.coords=new Coordinates();
+Position.prototype.coords = new Coordinates();
 
 /**
  * Property timestamp
@@ -397,14 +397,14 @@ Position.prototype.coords=new Coordinates();
  * @type Number
  * @memberOf Position
  */
-Position.prototype.timestamp=new Number;
+Position.prototype.timestamp = new Number;
 
 /**
  * Object PositionError
  * http://www.w3.org/TR/2012/PR-geolocation-API-20120510
  */
-function PositionError(){};
-PositionError.prototype=new Object();
+function PositionError() { };
+PositionError.prototype = new Object();
 
 /**
  * Constant PositionError.PERMISSION_DENIED=1
@@ -412,7 +412,7 @@ PositionError.prototype=new Object();
  * @constant
  * @type Number
  */
-PositionError.prototype.PERMISSION_DENIED=1;
+PositionError.prototype.PERMISSION_DENIED = 1;
 
 /**
  * Constant PositionError.POSITION_UNAVAILABLE=2
@@ -420,7 +420,7 @@ PositionError.prototype.PERMISSION_DENIED=1;
  * @constant
  * @type Number
  */
-PositionError.prototype.POSITION_UNAVAILABLE=2;
+PositionError.prototype.POSITION_UNAVAILABLE = 2;
 
 /**
  * Constant PositionError.TIMEOUT=3
@@ -428,7 +428,7 @@ PositionError.prototype.POSITION_UNAVAILABLE=2;
  * @constant
  * @type Number
  */
-PositionError.prototype.TIMEOUT=3;
+PositionError.prototype.TIMEOUT = 3;
 
 /**
  * Property code
@@ -436,7 +436,7 @@ PositionError.prototype.TIMEOUT=3;
  * @type Number
  * @memberOf PositionError
  */
-PositionError.prototype.code=new Number();
+PositionError.prototype.code = new Number();
 
 /**
  * Property message
@@ -444,14 +444,14 @@ PositionError.prototype.code=new Number();
  * @type String
  * @memberOf PositionError
  */
-PositionError.prototype.message=new String();
+PositionError.prototype.message = new String();
 
 /**
  * Object PositionOptions
  * http://www.w3.org/TR/2012/PR-geolocation-API-20120510
  */
-function PositionOptions(){};
-PositionOptions.prototype=new Object();
+function PositionOptions() { };
+PositionOptions.prototype = new Object();
 
 /**
  * Property enableHighAccuracy
@@ -459,7 +459,7 @@ PositionOptions.prototype=new Object();
  * @type Boolean
  * @memberOf PositionOptions
  */
-PositionOptions.prototype.enableHighAccuracy=new Boolean();
+PositionOptions.prototype.enableHighAccuracy = new Boolean();
 
 /**
  * Property timeout
@@ -467,7 +467,7 @@ PositionOptions.prototype.enableHighAccuracy=new Boolean();
  * @type Number
  * @memberOf PositionOptions
  */
-PositionOptions.prototype.timeout=new Number();
+PositionOptions.prototype.timeout = new Number();
 
 /**
  * Property maximumAge
@@ -475,14 +475,14 @@ PositionOptions.prototype.timeout=new Number();
  * @type Number
  * @memberOf PositionOptions
  */
-PositionOptions.prototype.maximumAge=new Number();
+PositionOptions.prototype.maximumAge = new Number();
 
 /**
  * Object TimeRanges
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  */
-function TimeRanges(){};
-TimeRanges.prototype=new Object();
+function TimeRanges() { };
+TimeRanges.prototype = new Object();
 
 /**
  * Property length
@@ -490,7 +490,7 @@ TimeRanges.prototype=new Object();
  * @type Number
  * @memberOf TimeRanges
  */
-TimeRanges.prototype.length=new Number();
+TimeRanges.prototype.length = new Number();
 
 /**
  * function start(index)
@@ -499,7 +499,7 @@ TimeRanges.prototype.length=new Number();
  * @memberOf TimeRanges
  * @returns {Number}
  */
-function start(index) {return new Number();};
+function start(index) { return new Number(); };
 
 /**
  * function end(index)
@@ -508,14 +508,14 @@ function start(index) {return new Number();};
  * @memberOf TimeRanges
  * @returns {Number}
  */
-function end(index) {return new Number();};
+function end(index) { return new Number(); };
 
 /**
  * Object MediaError
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  */
-function MediaError(){};
-MediaError.prototype=new Object();
+function MediaError() { };
+MediaError.prototype = new Object();
 
 /**
  * Constant MediaError.MEDIA_ERR_ABORTED=1
@@ -523,7 +523,7 @@ MediaError.prototype=new Object();
  * @constant
  * @type Number
  */
-MediaError.prototype.MEDIA_ERR_ABORTED=1;
+MediaError.prototype.MEDIA_ERR_ABORTED = 1;
 
 /**
  * Constant MediaError.MEDIA_ERR_NETWORK=2
@@ -531,7 +531,7 @@ MediaError.prototype.MEDIA_ERR_ABORTED=1;
  * @constant
  * @type Number
  */
-MediaError.prototype.MEDIA_ERR_NETWORK=2;
+MediaError.prototype.MEDIA_ERR_NETWORK = 2;
 
 /**
  * Constant MediaError.MEDIA_ERR_DECODED=3
@@ -539,7 +539,7 @@ MediaError.prototype.MEDIA_ERR_NETWORK=2;
  * @constant
  * @type Number
  */
-MediaError.prototype.MEDIA_ERR_DECODE=3;
+MediaError.prototype.MEDIA_ERR_DECODE = 3;
 
 /**
  * Constant MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED=4
@@ -547,7 +547,7 @@ MediaError.prototype.MEDIA_ERR_DECODE=3;
  * @constant
  * @type Number
  */
-MediaError.prototype.MEDIA_ERR_SRC_NOT_SUPPORTED=4;
+MediaError.prototype.MEDIA_ERR_SRC_NOT_SUPPORTED = 4;
 
 /**
  * Property code
@@ -555,7 +555,7 @@ MediaError.prototype.MEDIA_ERR_SRC_NOT_SUPPORTED=4;
  * @type Number
  * @memberOf MediaError
  */
-MediaError.prototype.code=new Number();
+MediaError.prototype.code = new Number();
 
 /**
  * Object HTMLMediaElement
@@ -563,7 +563,7 @@ MediaError.prototype.code=new Number();
  * @augments HTMLElement
  * @see HTMLElement
  */
-function HTMLMediaElement(){};
+function HTMLMediaElement() { };
 HTMLMediaElement.prototype = new HTMLElement();
 
 /**
@@ -572,7 +572,7 @@ HTMLMediaElement.prototype = new HTMLElement();
  * @type String
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.src=new String();
+HTMLMediaElement.prototype.src = new String();
 
 /**
  * Property currentSrc
@@ -580,7 +580,7 @@ HTMLMediaElement.prototype.src=new String();
  * @type String
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.currentSrc=new String();
+HTMLMediaElement.prototype.currentSrc = new String();
 
 /**
  * Property crossOrigin
@@ -588,7 +588,7 @@ HTMLMediaElement.prototype.currentSrc=new String();
  * @type String
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.crossOrigin=new String();
+HTMLMediaElement.prototype.crossOrigin = new String();
 
 /**
  * Constant HTMLMediaElement.NETWORK_EMPTY=0
@@ -596,7 +596,7 @@ HTMLMediaElement.prototype.crossOrigin=new String();
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.NETWORK_EMPTY=0;
+HTMLMediaElement.prototype.NETWORK_EMPTY = 0;
 
 /**
  * Constant HTMLMediaElement.NETWORK_IDLE=1
@@ -604,7 +604,7 @@ HTMLMediaElement.prototype.NETWORK_EMPTY=0;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.NETWORK_IDLE=1;
+HTMLMediaElement.prototype.NETWORK_IDLE = 1;
 
 /**
  * Constant HTMLMediaElement.NETWORK_LOADING=2
@@ -612,7 +612,7 @@ HTMLMediaElement.prototype.NETWORK_IDLE=1;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.NETWORK_LOADING=2;
+HTMLMediaElement.prototype.NETWORK_LOADING = 2;
 
 /**
  * Constant HTMLMediaElement.NETWORK_NO_SOURCE=3
@@ -620,7 +620,7 @@ HTMLMediaElement.prototype.NETWORK_LOADING=2;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.NETWORK_NO_SOURCE=3;
+HTMLMediaElement.prototype.NETWORK_NO_SOURCE = 3;
 
 /**
  * Property networkState
@@ -628,7 +628,7 @@ HTMLMediaElement.prototype.NETWORK_NO_SOURCE=3;
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.networkState=new Number();
+HTMLMediaElement.prototype.networkState = new Number();
 
 /**
  * Property preload
@@ -636,7 +636,7 @@ HTMLMediaElement.prototype.networkState=new Number();
  * @type String
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.preload=new String();
+HTMLMediaElement.prototype.preload = new String();
 
 /**
  * Property buffered
@@ -644,14 +644,14 @@ HTMLMediaElement.prototype.preload=new String();
  * @type TimeRanges
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.buffered=new TimeRanges();
+HTMLMediaElement.prototype.buffered = new TimeRanges();
 
 /**
  * function load()
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.load=function(){};
+HTMLMediaElement.prototype.load = function() { };
 
 /**
  * function canPlayType(type)
@@ -660,7 +660,7 @@ HTMLMediaElement.prototype.load=function(){};
  * @memberOf HTMLMediaElement
  * @returns {String}
  */
-HTMLMediaElement.prototype.canPlayType=function(type){new String();};
+HTMLMediaElement.prototype.canPlayType = function(type) { new String(); };
 
 /**
  * Constant HTMLMediaElement.HAVE_NOTHING=0
@@ -668,7 +668,7 @@ HTMLMediaElement.prototype.canPlayType=function(type){new String();};
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.HAVE_NOTHING=0;
+HTMLMediaElement.prototype.HAVE_NOTHING = 0;
 
 /**
  * Constant HTMLMediaElement.HAVE_METADATA=1
@@ -676,7 +676,7 @@ HTMLMediaElement.prototype.HAVE_NOTHING=0;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.HAVE_METADATA=1;
+HTMLMediaElement.prototype.HAVE_METADATA = 1;
 
 /**
  * Constant HTMLMediaElement.HAVE_CURRENT_DATA=2
@@ -684,7 +684,7 @@ HTMLMediaElement.prototype.HAVE_METADATA=1;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.HAVE_CURRENT_DATA=2;
+HTMLMediaElement.prototype.HAVE_CURRENT_DATA = 2;
 
 /**
  * Constant HTMLMediaElement.HAVE_FUTURE_DATA=3
@@ -692,7 +692,7 @@ HTMLMediaElement.prototype.HAVE_CURRENT_DATA=2;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.HAVE_FUTURE_DATA=3;
+HTMLMediaElement.prototype.HAVE_FUTURE_DATA = 3;
 
 /**
  * Constant HTMLMediaElement.HAVE_ENOUGH_DATA=4
@@ -700,7 +700,7 @@ HTMLMediaElement.prototype.HAVE_FUTURE_DATA=3;
  * @constant
  * @type Number
  */
-HTMLMediaElement.prototype.HAVE_ENOUGH_DATA=4;
+HTMLMediaElement.prototype.HAVE_ENOUGH_DATA = 4;
 
 /**
  * Property readyState
@@ -708,7 +708,7 @@ HTMLMediaElement.prototype.HAVE_ENOUGH_DATA=4;
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.readyState=new Number();
+HTMLMediaElement.prototype.readyState = new Number();
 
 /**
  * Property seeking
@@ -716,7 +716,7 @@ HTMLMediaElement.prototype.readyState=new Number();
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.seeking=new Boolean();
+HTMLMediaElement.prototype.seeking = new Boolean();
 
 /**
  * Property currentTime
@@ -724,15 +724,15 @@ HTMLMediaElement.prototype.seeking=new Boolean();
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.currentTime=new Number();
+HTMLMediaElement.prototype.currentTime = new Number();
 
 /**
  * Property initialTime
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  * @type Number
  * @memberOf HTMLMediaElement
- */         
-HTMLMediaElement.prototype.initialTime=new Number();
+ */
+HTMLMediaElement.prototype.initialTime = new Number();
 
 /**
  * Property duration
@@ -740,7 +740,7 @@ HTMLMediaElement.prototype.initialTime=new Number();
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.duration=new Number();
+HTMLMediaElement.prototype.duration = new Number();
 
 /**
  * Property startOffsetTime
@@ -748,7 +748,7 @@ HTMLMediaElement.prototype.duration=new Number();
  * @type Date
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.startOffsetTime=new Date();
+HTMLMediaElement.prototype.startOffsetTime = new Date();
 
 /**
  * Property paused
@@ -756,7 +756,7 @@ HTMLMediaElement.prototype.startOffsetTime=new Date();
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.paused=new Boolean();
+HTMLMediaElement.prototype.paused = new Boolean();
 
 /**
  * Property defaultPlaybackRate
@@ -764,7 +764,7 @@ HTMLMediaElement.prototype.paused=new Boolean();
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.defaultPlaybackRate=new Number();
+HTMLMediaElement.prototype.defaultPlaybackRate = new Number();
 
 /**
  * Property playbackRate
@@ -772,7 +772,7 @@ HTMLMediaElement.prototype.defaultPlaybackRate=new Number();
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.playbackRate=new Number();
+HTMLMediaElement.prototype.playbackRate = new Number();
 
 /**
  * Property played
@@ -780,7 +780,7 @@ HTMLMediaElement.prototype.playbackRate=new Number();
  * @type TimeRanges
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.played=new TimeRanges();
+HTMLMediaElement.prototype.played = new TimeRanges();
 
 /**
  * Property seekable
@@ -788,7 +788,7 @@ HTMLMediaElement.prototype.played=new TimeRanges();
  * @type TimeRanges
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.seekable=new TimeRanges();
+HTMLMediaElement.prototype.seekable = new TimeRanges();
 
 /**
  * Property ended
@@ -796,7 +796,7 @@ HTMLMediaElement.prototype.seekable=new TimeRanges();
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.ended=new Boolean();
+HTMLMediaElement.prototype.ended = new Boolean();
 
 /**
  * Property autoplay
@@ -804,7 +804,7 @@ HTMLMediaElement.prototype.ended=new Boolean();
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.autoplay=new Boolean();
+HTMLMediaElement.prototype.autoplay = new Boolean();
 
 /**
  * Property loop
@@ -812,21 +812,21 @@ HTMLMediaElement.prototype.autoplay=new Boolean();
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.loop=new Boolean();
+HTMLMediaElement.prototype.loop = new Boolean();
 
 /**
  * function play()
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.play=function(){};
+HTMLMediaElement.prototype.play = function() { };
 
 /**
  * function pause()
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.pause=function(){};
+HTMLMediaElement.prototype.pause = function() { };
 
 /**
  * Property controls
@@ -834,7 +834,7 @@ HTMLMediaElement.prototype.pause=function(){};
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.controls=new Boolean();
+HTMLMediaElement.prototype.controls = new Boolean();
 
 /**
  * Property volume
@@ -842,7 +842,7 @@ HTMLMediaElement.prototype.controls=new Boolean();
  * @type Number
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.volume=new Number();
+HTMLMediaElement.prototype.volume = new Number();
 
 /**
  * Property muted
@@ -850,15 +850,15 @@ HTMLMediaElement.prototype.volume=new Number();
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.muted=new Boolean();
-         
+HTMLMediaElement.prototype.muted = new Boolean();
+
 /**
  * Property defaultMuted
  * http://www.w3.org/TR/2012/WD-html5-20120329/media-elements.html
  * @type Boolean
  * @memberOf HTMLMediaElement
  */
-HTMLMediaElement.prototype.defaultMuted=new Boolean();
+HTMLMediaElement.prototype.defaultMuted = new Boolean();
 
 /**
  * Object HTMLAudioElement
@@ -868,7 +868,7 @@ HTMLMediaElement.prototype.defaultMuted=new Boolean();
  * @param {String} src
  * @see HTMLMediaElement
  */
-function HTMLAudioElement(src){};
+function HTMLAudioElement(src) { };
 HTMLAudioElement.prototype = new HTMLMediaElement();
 
 /**
@@ -877,7 +877,7 @@ HTMLAudioElement.prototype = new HTMLMediaElement();
  * @augments HTMLMediaElement
  * @see HTMLMediaElement
  */
-function HTMLVideoElement(){};
+function HTMLVideoElement() { };
 HTMLVideoElement.prototype = new HTMLMediaElement();
 
 /**
@@ -886,7 +886,7 @@ HTMLVideoElement.prototype = new HTMLMediaElement();
  * @type Number
  * @memberOf HTMLVideoElement
  */
-HTMLVideoElement.prototype.width=new Number();
+HTMLVideoElement.prototype.width = new Number();
 
 /**
  * Property height
@@ -894,7 +894,7 @@ HTMLVideoElement.prototype.width=new Number();
  * @type Number
  * @memberOf HTMLVideoElement
  */
-HTMLVideoElement.prototype.height=new Number();
+HTMLVideoElement.prototype.height = new Number();
 
 /**
  * Property videoWidth
@@ -902,7 +902,7 @@ HTMLVideoElement.prototype.height=new Number();
  * @type Number
  * @memberOf HTMLVideoElement
  */
-HTMLVideoElement.prototype.videoWidth=new Number();
+HTMLVideoElement.prototype.videoWidth = new Number();
 
 /**
  * Property videoHeight
@@ -910,7 +910,7 @@ HTMLVideoElement.prototype.videoWidth=new Number();
  * @type Number
  * @memberOf HTMLVideoElement
  */
-HTMLVideoElement.prototype.videoHeight=new Number();
+HTMLVideoElement.prototype.videoHeight = new Number();
 
 /**
  * Property poster
@@ -918,5 +918,5 @@ HTMLVideoElement.prototype.videoHeight=new Number();
  * @type String
  * @memberOf HTMLVideoElement
  */
-HTMLVideoElement.prototype.poster=new String();
+HTMLVideoElement.prototype.poster = new String();
 

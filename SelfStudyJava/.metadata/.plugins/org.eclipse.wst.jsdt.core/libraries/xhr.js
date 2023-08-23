@@ -18,60 +18,60 @@
 * @type XMLHttpRequest
 * @memberOf Window
 */
-Window.prototype.createRequest= function(){return new XMLHttpRequest();};
+Window.prototype.createRequest = function() { return new XMLHttpRequest(); };
 /**
 * Object XMLHttpRequest
 * @type constructor
 */
-XMLHttpRequest.prototype=new Object();
-function XMLHttpRequest(){};
+XMLHttpRequest.prototype = new Object();
+function XMLHttpRequest() { };
 
 /**
  * function onreadystatechange
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.onreadystatechange=function(){};
+XMLHttpRequest.prototype.onreadystatechange = function() { };
 /**
  * property readyState
  * @type Number
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.readyState=0;
+XMLHttpRequest.prototype.readyState = 0;
 /**
  * property responseText
  * @type String
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.responseText="";
+XMLHttpRequest.prototype.responseText = "";
 /**
  * property responseXML
  * @type Document
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.responseXML=new Document();
+XMLHttpRequest.prototype.responseXML = new Document();
 /**
  * property status
  * @type Number
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.status=0;
+XMLHttpRequest.prototype.status = 0;
 /**
  * property statusText
  * @type String
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.statusText="";
+XMLHttpRequest.prototype.statusText = "";
 /**
  * function abort()
  * @memberOf XMLHttpRequest
  */
-XMLHttpRequest.prototype.abort=function(){};
+XMLHttpRequest.prototype.abort = function() { };
 /**
 * function getAllResponseHeaders()
 * @type String
 * @memberOf XMLHttpRequest
 */
-XMLHttpRequest.prototype.getAllResponseHeaders=function(){return "";};
+XMLHttpRequest.prototype.getAllResponseHeaders = function() { return ""; };
 /**
 * function open(method, url, async, username, password)
 * @param {String} method
@@ -81,24 +81,24 @@ XMLHttpRequest.prototype.getAllResponseHeaders=function(){return "";};
 * @param {String} optional password
 * @memberOf XMLHttpRequest
 */
-XMLHttpRequest.prototype.open=function(method, url, async, username, password){};
+XMLHttpRequest.prototype.open = function(method, url, async, username, password) { };
 /**
 * function send(body)
 * @param {Object} body
 * @memberOf XMLHttpRequest
 */
-XMLHttpRequest.prototype.send=function(body){};
+XMLHttpRequest.prototype.send = function(body) { };
 /**
 * function setRequestHeader(header,value)
 * @param {String} header
 * @param {String} value
 * @memberOf XMLHttpRequest
 */
-XMLHttpRequest.prototype.setRequestHeader=function(header,value){};
+XMLHttpRequest.prototype.setRequestHeader = function(header, value) { };
 /**
 * function getAllResponseHeaders()
 * @param {String} header
 * @type String
 * @memberOf XMLHttpRequest
 */
-XMLHttpRequest.prototype.getResponseHeader=function(header){return "";};
+XMLHttpRequest.prototype.getResponseHeader = function(header) { return ""; };
